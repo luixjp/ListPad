@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ListPad</string>
+    <string name="fab_add_country">Click here to add a new Country</string>
+    <string name="fab_add_place">Click here to add a new Place</string>
+    <string name="search">Search</string>
+    <string name="msg_no_countries">Please, add a country that you wish to visit using the following float button!</string>
+    <string name="msg_no_places">Please, add a place that you wish to visit using the following float button!</string>
+    <string name="country_name">Country Name:</string>
+    <string name="place_name">Place Name:</string>
+    <string name="country_abbreviation"><![CDATA[Country Abbreviation (e.i: Brazil -> BR):]]></string>
+    <string name="place_description">Type your place\'s description or a memory:</string>
+    <string name="read_place_description">Read your place\'s description or memory:</string>
+    <string name="country_abbreviation_desc">Type a Country Abbreviation</string>
+    <string name="country_urgent">Is this Travel to this Country is Urgent?</string>
+    <string name="country_urgent_desc">Is this Travel to this Country is Urgent?</string>
+    <string name="urgent">Urgent</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="country_name_desc">Type a Country Name:</string>
+    <string name="select_country">Please, click on the image below to select an country\'s image.</string>
+    <string name="select_country_desc">Please, click on the image below to select an country\'s image.</string>
+    <string name="select_place">Please, click on the image below to select a place\'s image.</string>
+    <string name="select_place_desc">Please, click on the image below to select a place\'s image.</string>
+    <string name="adding_country_into">You are adding a Country into: </string>
+    <string name="adding_country_into_desc">You are adding a Country into: </string>
+    <string name="adding_place_into">You are adding a Place into: </string>
+    <string name="adding_place_into_desc">You are adding a Place into: </string>
+    <string name="place_into">This Place\'s Country is: </string>
+    <string name="place_into_desc">This Place\'s Country is: </string>
+    <string name="visited">Visited</string>
+    <string name="already_visited">Did you already visited this place?</string>
+
+</resources>

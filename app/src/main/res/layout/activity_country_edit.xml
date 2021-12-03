@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_margin="8dp"
+tools:context=".activity.CountryEditActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/select_country_desc"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center|center_horizontal"
+            android:text="@string/select_country">
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagePhotoEdit"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/ic_countries" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicatorEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progress="50"
+            app:indicatorColor="@color/darkGreen"
+            style="@style/Widget.MaterialComponents.CircularProgressIndicator"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/country_name_desc"
+            android:textStyle="bold"
+            android:labelFor="@id/edtCountryName"
+            android:text="@string/country_name">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtCountryNameEdit"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/country_abbreviation_desc"
+            android:textStyle="bold"
+            android:labelFor="@id/edtCountryAbbreviation"
+            android:text="@string/country_abbreviation">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtCountryAbbreviationEdit"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/country_urgent_desc"
+            android:textStyle="bold"
+            android:labelFor="@id/ckbUrgent"
+            android:text="@string/country_urgent">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/ckbUrgentEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/urgent" />
+
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/botoes"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/update"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/botoesVermelho"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/delete"/>
+
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/botoes"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

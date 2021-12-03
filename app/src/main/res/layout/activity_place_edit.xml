@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_margin="8dp"
+tools:context=".activity.PlaceEditActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:isScrollContainer="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/select_place_desc"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center|center_horizontal"
+            android:text="@string/select_place">
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagePhotoPlace"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/ic_places" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicatorPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progress="50"
+            app:indicatorColor="@color/darkGreen"
+            style="@style/Widget.MaterialComponents.CircularProgressIndicator"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/country_name_desc"
+            android:textStyle="bold"
+            android:labelFor="@id/edtPlaceName"
+            android:text="@string/place_name">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtPlaceName"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/place_description"
+            android:textStyle="bold"
+            android:labelFor="@id/edtPlaceDescription"
+            android:text="@string/place_description">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtPlaceDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:maxLines="5"
+            android:lines="5"
+            android:gravity="top|start"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical|horizontal"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/already_visited"
+            android:textStyle="bold"
+            android:labelFor="@id/ckbVisited"
+            android:text="@string/already_visited">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/ckbVisited"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/visited" />
+
+        <Button
+            android:id="@+id/btnUpdatePlace"
+            style="@style/botoes"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/update"/>
+
+        <Button
+            android:id="@+id/btnDeletePlace"
+            style="@style/botoesVermelho"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/delete"/>
+
+
+        <Button
+            android:id="@+id/btnBackPlace"
+            style="@style/botoes"
+            app:backgroundTint="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/back" />
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
